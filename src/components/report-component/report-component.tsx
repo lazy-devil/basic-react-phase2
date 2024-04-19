@@ -7,13 +7,16 @@ const Report = () => {
 
     return (
         <div>
-            {/* <DataContext.Consumer>
+            {
+            /* <DataContext.Consumer>
                 {(data) =>
                     <>
                         <p>รายรับ: {data?.income}</p>
                         <p>รายจ่าย: {data?.expense}</p>
                     </>}
-            </DataContext.Consumer> */}
+            </DataContext.Consumer>
+            */
+            }
             <h4>ยอดคงเหลือ (บาท)</h4>
             <h1>฿{income - expense}</h1>
             <div className='report-container'>
