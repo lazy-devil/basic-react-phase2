@@ -10,13 +10,7 @@ const HomeLayout = () => {
   return (
     <>
       <nav>
-        <ul className='horizontal-menu'>
-          <li>
-            <Link to='/report'>ข้อมูลบัญชี</Link>
-          </li>
-          <li>
-            <Link to='/report/insert'>บันทึกข้อมูล</Link>
-          </li>
+        <ul>
           <li>
             <Link to="/home">Home</Link>
           </li>
@@ -25,6 +19,12 @@ const HomeLayout = () => {
           </li>
           <li>
             <button onClick={handleClick}>Menu2</button>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </nav>
