@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import './item-component.css'
-import { InputType } from '../../App';
+import { InputType, formatNumber } from '../../App';
 
 const Item = (props: InputType) => {
     const { title, amount } = props
@@ -8,7 +8,7 @@ const Item = (props: InputType) => {
     const symbol: string = amount < 0 ? '-' : '+'
 
     return (
-        <li className={status}>{title}<span>{symbol}{Math.abs(amount)}</span></li>
+        <li className={status}>{title}<span>{symbol}{formatNumber(Math.abs(amount).toFixed(2))}</span></li>
     );
 }
 

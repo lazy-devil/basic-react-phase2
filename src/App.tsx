@@ -10,6 +10,9 @@ import { BrowserRouter, Routes, Route, Link, RouterProvider } from 'react-router
 // import routers from './routers'
 
 export interface InputType { id: string, title: string, amount: number }
+export function formatNumber(num: number | string) {
+  return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
+}
 
 // const App: FC<{ name: string }> = ({ name }) => {
 //   return <RouterProvider router={routers} />;
