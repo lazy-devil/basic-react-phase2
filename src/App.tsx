@@ -4,7 +4,8 @@ import FormComponent from './components/form-component/form-component'
 import Transaction from './components/transaction-component/transaction-component'
 import DataContext from './data/DataContext'
 import Report from './components/report-component/report-component'
-import { BrowserRouter, Routes, Route, Link, RouterProvider } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+//import { RouterProvider } from 'react-router-dom'
 
 // import { FC } from 'react';
 // import routers from './routers'
